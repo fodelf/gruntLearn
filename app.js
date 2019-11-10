@@ -1,4 +1,5 @@
-var liveServer = require('live-server')
+// var liveServer = require('live-server')
+var liveServer = require('./liveServer')
 
 var params = {
   port: 8181, // Set the server port. Defaults to 8080.
@@ -14,7 +15,6 @@ var params = {
     function(req, res, next) {
       next()
     }
-  ] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
+  ] // Takes an array of Connect-compatible middleware that are injected into the server middlew
 }
-
 liveServer.start(params)
